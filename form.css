@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+    padding:0px;
+    background-color:aliceblue;
+    
+}
+
+body{
+    text-align:center;
+    padding-left:500px;
+    padding-right:500px;
+    padding-top:50px;
+   padding-bottom:50px;
+   background-image: url('anime-goated.gif');
+    background-size: cover;
+   
+}
+
+
+form label{
+    
+    color:black;
+}
+form fieldset{
+    box-shadow: 0 5px 29px rgba(0, 0, 0, 0.9);
+}
+form fieldset legend{ 
+    background-image: linear-gradient( #1f155e, #58ac95);
+    border-radius: 50%;
+    padding:20px;
+}
+
+form button{
+    background-image: linear-gradient( #1f155e, #58ac95);
+    border-radius: 30%;
+    padding:20px;
+}
+

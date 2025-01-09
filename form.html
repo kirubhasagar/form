@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team Registration</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        label {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://formspree.io/f/xvggvlzl" method="POST">
+        <fieldset>
+            <legend>Football Team Registration Form</legend>
+            <table>
+                <tr>
+                    <td>Player Name:</td>
+                    <td><input type="text" name="player_name" placeholder="Enter Player's Name" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" placeholder="Enter Player's Email" required></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" name="age" placeholder="Enter Player's Age"  required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number:</td>
+                    <td><input type="tel" name="contact" placeholder="Enter Player's Contact Number" required></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td>
+                        <select name="position" required>
+                            <option value="">Select Position</option>
+                            <option value="Goalkeeper">Goalkeeper</option>
+                            <option value="Defender">Defender</option>
+                            <option value="Midfielder">Midfielder</option>
+                            <option value="Forward">Forward</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input type="text" name="country" placeholder="Enter Player's Country" required></td>
+                <tr>
+                    <td>Player Image:</td>
+                    <td><input type="file" name="player_image" accept="image/*" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" required> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Preferred Foot:</td>
+                    <td>
+                        <input type="radio" name="foot" value="Left" required> Left
+                        <input type="radio" name="foot" value="Right"> Right
+                        <input type="radio" name="foot" value="Both"> Both
+                    </td>
+                </tr>
+                <tr>
+                    <td>Skills:</td>
+                    <td>
+                        <input type="checkbox" name="skills" value="Dribbling"> Dribbling
+                        <input type="checkbox" name="skills" value="Shooting"> Shooting
+                        <input type="checkbox" name="skills" value="Passing"> Passing
+                        <input type="checkbox" name="skills" value="Defending"> Defending
+                    </td>
+                </tr>
+                <tr>
+                    <td>Team Experience (Years):</td>
+                    <td><input type="number" name="experience" placeholder="Enter Experience in Years" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Favorite Team:</td>
+                    <td><input type="text" name="favorite_team" placeholder="Enter Favorite Football Team"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
